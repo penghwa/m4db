@@ -2,7 +2,7 @@
 manage monitor multiple machine &amp; database
 
 是一款统一的自动化运维及监控集成平台。适合有一定运维技术基础的人使用，能满足个性化监控需求；自动化运维功能上，和常用的ansible, puppet等比较：
-不仅能处理主机，也适用于数据库其他监控种类，完全图形化操作，无代理。。。
+不仅能处理主机，也适用于数据库等其他监控种类，完全图形化操作，无代理。。。
 
 M4DB（多主机/数据库管理与监控)Manage Monitor Multiple Machine & DB
 
