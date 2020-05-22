@@ -1,7 +1,6 @@
 # m4db
 manage monitor multiple machine &amp; database
-
-demo & download : www.m4db.cn
+是一款统一的自动化运维及监控的集成平台
 
 M4DB（多主机/数据库管理与监控)Manage Monitor Multiple Machine & DB
 
