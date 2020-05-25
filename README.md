@@ -4,7 +4,8 @@ Manage Monitor Multiple Machine &amp; DataBase
 是一款统一的自动化运维及监控集成平台。适合有一定运维技术基础的人使用，能满足个性化监控需求；自动化运维功能上，和常用的ansible, puppet等比较：
 不仅能处理主机，也适用于数据库等其他监控种类，完全图形化操作，无代理。。。
 
-之前的web端使用Flex/ActionScript3编写，打算用js改写。顺带进行重构，添加新功能，为最后开源做准备。征求运维同仁的意见！！！
+之前的web端使用Flex/ActionScript3编写，打算用js改写。顺带进行重构，添加新功能，为最后开源做准备。征求运维同仁的意见：改进建议，需要哪些功能等！！！
+欢迎交流：QQ:343372295 , Wx:m4dbapp  Emial: m4dbapp@163.com
 
 详见： http://penghwa.github.io/m4db/m4db_intro.html
 
