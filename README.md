@@ -1,4 +1,4 @@
-# m4db
+# M4DB
 Manage Monitor Multiple Machine &amp; DataBase
 
 是一款统一的自动化运维及监控集成平台。适合有一定运维技术基础的人使用，能满足个性化监控需求；
