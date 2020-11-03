@@ -31,7 +31,7 @@ M4DB（多主机/数据库管理与监控)Manage Monitor Multiple Machine & DB
 .Machine & Database –主机、数据库等
 
 管理对象主要是主机、数据库，兼顾应用服务、网络设备等（统称为监控主体）。
-提供了ssh, telnet, jdbc, jmx, snmp,http, socket, ipmi及代理等多种方式连接监控主体，接收snmp trap, syslog, 进行监控管理
+提供了ssh, telnet, jdbc, jmx, snmp,http, socket, ipmi，代理，以及二次开发其他种类的协议，等多种方式连接监控主体，也可以接收snmp trap, syslog等, 进行监控管理
 
 
 
