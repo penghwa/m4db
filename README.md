@@ -11,7 +11,7 @@ Manage Monitor Multiple Machine &amp; DataBase
 支持多个采集端；采集线程超时处理，自动修复等。。。
 
 之前的web端使用Flex/ActionScript3编写，打算用js改写。顺带进行重构，添加新功能，为最后开源做准备。征求运维同仁的意见：改进建议，需要哪些功能等！！！
-欢迎交流：QQ:343372295 , Wx:m4dbapp  Emial: m4dbapp@163.com
+欢迎交流：Wx: mystery-m4  Emial: m4dbapp@163.com
 
 功能简介,详见： http://penghwa.github.io/m4db/m4db_intro.html
 
