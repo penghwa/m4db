@@ -13,7 +13,7 @@ Manage Monitor Multiple Machine &amp; DataBase
 之前的web端使用Flex/ActionScript3编写，打算用js改写。顺带进行重构，添加新功能，为最后开源做准备。征求运维同仁的意见：改进建议，需要哪些功能等！！！
 欢迎交流：Wx: mystery-m4  Emial: m4dbapp@163.com
 
-功能简介,详见： http://penghwa.github.io/m4db/m4db_intro.html
+功能简介,详见： https://penghwa.github.io/m4db/m4db_intro.html
 
 M4DB（多主机/数据库管理与监控)Manage Monitor Multiple Machine & DB
 
