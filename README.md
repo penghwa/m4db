@@ -1,5 +1,5 @@
 # M4DB
-**<u>M</u>**anage **<u>M</u>**onitor **<u>M</u>**ultiple **<u>M</u>**achine &amp; **D**ata**B**ase
+**M**anage **M**onitor **M**ultiple **M**achine &amp; **D**ata**B**ase
 
 是一款统一的**自动化运维及监控集成平台**。适合有一定运维技术基础的人使用，能满足个性化监控需求；
 
