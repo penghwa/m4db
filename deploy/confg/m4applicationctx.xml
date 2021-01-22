@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="http://www.springframework.org/schema/beans          http://www.springframework.org/schema/beans/spring-beans-2.5.xsd          http://www.springframework.org/schema/context          http://www.springframework.org/schema/context/spring-context-2.5.xsd          http://www.springframework.org/schema/aop           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd          http://www.springframework.org/schema/tx            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">  
+      <!--bean id="m4DataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
+    <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>  
+    <property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521/orclpdb"/>  
+    <property name="username" value="mydb"/>  
+    <property name="password" value="sa123"/> 
+  </bean-->  
+  <bean id="m4DataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
+    <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>  
+    <property name="url" value="jdbc:derby://127.0.0.1:1527/mydb"/>  
+    <property name="username" value="sa"/>  
+    <property name="password" value="sa123"/> 
+  </bean>  
+  <bean id="mysessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"> 
+    <property name="dataSource" ref="m4DataSource"/>  
+    <property name="packagesToScan" value="com.m4db.entity"/>  
+    <property name="hibernateProperties"> 
+            <value>
+                hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+                hibernate.show_sql=true
+                hibernate.jdbc.fetch_size=100
+                hibernate.jdbc.batch_size=100
+            </value>
+    </property> 
+  </bean>  
+  <!--bean id="querySqlConfig" class="com.m4db.context.M4QuerySqlConfig" depends-on="m4DataSource"> 
+    <property name="itemHistSql"><value>select b.catname, a.* from m4outputitemhistory a, m4hostinfo b where a.hostname=b.hostname and a.hostname=? and a.objectname=? and a.executetime=cast( ? as date) </value>
+    </property>
+    <property name="resultHistSql"><value>select b.catname, a.* from m4outputhistory a, m4hostinfo b where a.hostname=b.hostname and a.hostname=? and a.objectname=? and a.executetime=cast(? as date) </value>
+    </property> 
+    <property name="whereStartExecuteSql"><value> and a.executetime &gt;= cast(? as date) </value></property>
+    <property name="whereEndExecuteSql"><value> and a.executetime &lt; cast(? as date)  </value></property>
+    <property name="delHistSqlCond"><value> and hostname=:hostname and objectname=:objectname and executetime=cast(:executetime as date) </value></property>
+  </bean-->  
+  <bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager"> 
+    <property name="sessionFactory" ref="mysessionFactory"/> 
+  </bean>  
+  <tx:annotation-driven transaction-manager="txManager"/>  
+  <bean id="resultOutputdao" class="com.m4db.db.dao.M4ResultOutputDao"> 
+    <property name="sessionFactory" ref="mysessionFactory"/> 
+  </bean>  
+  <bean id="m4DMLdao" class="com.m4db.db.dao.M4DMLDao"> 
+    <property name="sessionFactory" ref="mysessionFactory"/> 
+  </bean>
+</beans>
