@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <agent logpath="g:\temp\m4agent" scriptpath="" port="7511" interval="5"/>
+    <objects>
+        <object name="vmstat" filename="vmstat.out" lastvisit="" lastmodified=""/>
+    </objects>
+    
+    <clients>
+        <client ip="144.16.52.81" />
+    </clients>
+</config>
