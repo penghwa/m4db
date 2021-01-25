@@ -1,0 +1,20 @@
+M4DB 代理端 (监听在某个端口，处理接收的command)
+和监控采集、运维工具通信。
+监控采集端定时从代理端获取监控结果;
+运维工具发起脚本命令，代理端执行后返回
+
+配置文件，如：
+m4agent.xml :
+
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <agent logpath="g:\temp\m4agent" scriptpath="" port="7511" interval="5"/>
+    <objects>
+        <object name="vmstat" filename="vmstat.out" lastvisit="" lastmodified=""/>
+    </objects>
+    
+    <clients>
+        <client ip="192.168.52.81" />
+    </clients>
+</config>
+
