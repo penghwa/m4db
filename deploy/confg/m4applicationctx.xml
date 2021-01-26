@@ -17,7 +17,7 @@
     <property name="packagesToScan" value="com.m4db.entity"/>  
     <property name="hibernateProperties"> 
             <value>
-                hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+                hibernate.dialect=org.hibernate.dialect.DerbyDialect
                 hibernate.show_sql=true
                 hibernate.jdbc.fetch_size=100
                 hibernate.jdbc.batch_size=100
